@@ -8,8 +8,8 @@
             href="https://fonts.googleapis.com/css?family=Varela+Round"
             type="text/css"
         />
-        <link rel="stylesheet" href="../normalize.css" />
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="stylesheet" href="css/style.css" />
         <title>Project 3: The Code Review</title>
     </head>
     <body>
@@ -35,147 +35,142 @@
                     Get the latest news on how your code is doing right in your inbox
                 </p>
             </section>
-
-
-
+<hr>
             
 <!-- section 2: form -->
 <!-- section 2: form -->
 <!-- section 2: form -->
 <!-- section 2: form -->
 <!-- section 2: form -->
-
+        <fieldset>
             <section class="sec2">
-                <!-- this is preliminary setup.  Get more specific -->
-                <h2>Contact Information</h2>
+                <legend>Contact Information</legend>
 
                 <form>
-                    <fieldset>
                         <div class="name">
                             <label for="fullName">Full Name</label>
-                            <input type="text" id="fullName" placeholder="Required" required>
+                            <input type="text" id="fullName" name="user_name" placeholder="Required" required>
                         </div>
                         
                         <div class="email">
                             <label for="email">Email Address</label>
-                            <input type="email" id="email" placeholder="Required" required>
+                            <input type="email" id="email" name="user_email" placeholder="Required" required>
                         </div>
 
                         <div class="tel">
                             <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone">
+                            <input type="tel" id="phone" name="user_phone">
                         </div>
 
                         <div class="address">
                             <label for="address">Street Address</label>
-                            <input type="text" id="address">
-                        </div>
-
-                        <div>
-                            <label for="zip">ZIP Code Lookup:</label>
-                            <input type="text" id="zip" maxlength="5" alt="Type in your 5-digit zip code and hit enter"/>
+                            <input type="text" id="address" name="user_address">
                         </div>
 
                         <div class="city">
                             <label for="city">City</label>
-                            <input type="text" id="city" disabled>
+                            <input type="text" id="city" name="user_city">
                         </div>
 
 <!-- pasted states from https://v1.designsystem.digital.gov/components/form-templates/ -->
-                        <div class="states">
-                            <label for="state">State</label>
-                            <select id="state" name="state" disabled>
-                                <option value>Choose State</option>
-                                <option value="AL">Alabama</option>
-                                <option value="AK">Alaska</option>
-                                <option value="AZ">Arizona</option>
-                                <option value="AR">Arkansas</option>
-                                <option value="CA">California</option>
-                                <option value="CO">Colorado</option>
-                                <option value="CT">Connecticut</option>
-                                <option value="DE">Delaware</option>
-                                <option value="DC">District of Columbia</option>
-                                <option value="FL">Florida</option>
-                                <option value="GA">Georgia</option>
-                                <option value="HI">Hawaii</option>
-                                <option value="ID">Idaho</option>
-                                <option value="IL">Illinois</option>
-                                <option value="IN">Indiana</option>
-                                <option value="IA">Iowa</option>
-                                <option value="KS">Kansas</option>
-                                <option value="KY">Kentucky</option>
-                                <option value="LA">Louisiana</option>
-                                <option value="ME">Maine</option>
-                                <option value="MD">Maryland</option>
-                                <option value="MA">Massachusetts</option>
-                                <option value="MI">Michigan</option>
-                                <option value="MN">Minnesota</option>
-                                <option value="MS">Mississippi</option>
-                                <option value="MO">Missouri</option>
-                                <option value="MT">Montana</option>
-                                <option value="NE">Nebraska</option>
-                                <option value="NV">Nevada</option>
-                                <option value="NH">New Hampshire</option>
-                                <option value="NJ">New Jersey</option>
-                                <option value="NM">New Mexico</option>
-                                <option value="NY">New York</option>
-                                <option value="NC">North Carolina</option>
-                                <option value="ND">North Dakota</option>
-                                <option value="OH">Ohio</option>
-                                <option value="OK">Oklahoma</option>
-                                <option value="OR">Oregon</option>
-                                <option value="PA">Pennsylvania</option>
-                                <option value="RI">Rhode Island</option>
-                                <option value="SC">South Carolina</option>
-                                <option value="SD">South Dakota</option>
-                                <option value="TN">Tennessee</option>
-                                <option value="TX">Texas</option>
-                                <option value="UT">Utah</option>
-                                <option value="VT">Vermont</option>
-                                <option value="VA">Virginia</option>
-                                <option value="WA">Washington</option>
-                                <option value="WV">West Virginia</option>
-                                <option value="WI">Wisconsin</option>
-                                <option value="WY">Wyoming</option>
+                    <div class="states">
+                        <label for="state">State</label>
+                        <select id="state" name="state">
+                            <option value>Choose State</option>
+                            <option value="AL">Alabama</option>
+                            <option value="AK">Alaska</option>
+                            <option value="AZ">Arizona</option>
+                            <option value="AR">Arkansas</option>
+                            <option value="CA">California</option>
+                            <option value="CO">Colorado</option>
+                            <option value="CT">Connecticut</option>
+                            <option value="DE">Delaware</option>
+                            <option value="DC">District of Columbia</option>
+                            <option value="FL">Florida</option>
+                            <option value="GA">Georgia</option>
+                            <option value="HI">Hawaii</option>
+                            <option value="ID">Idaho</option>
+                            <option value="IL">Illinois</option>
+                            <option value="IN">Indiana</option>
+                            <option value="IA">Iowa</option>
+                            <option value="KS">Kansas</option>
+                            <option value="KY">Kentucky</option>
+                            <option value="LA">Louisiana</option>
+                            <option value="ME">Maine</option>
+                            <option value="MD">Maryland</option>
+                            <option value="MA">Massachusetts</option>
+                            <option value="MI">Michigan</option>
+                            <option value="MN">Minnesota</option>
+                            <option value="MS">Mississippi</option>
+                            <option value="MO">Missouri</option>
+                            <option value="MT">Montana</option>
+                            <option value="NE">Nebraska</option>
+                            <option value="NV">Nevada</option>
+                            <option value="NH">New Hampshire</option>
+                            <option value="NJ">New Jersey</option>
+                            <option value="NM">New Mexico</option>
+                            <option value="NY">New York</option>
+                            <option value="NC">North Carolina</option>
+                            <option value="ND">North Dakota</option>
+                            <option value="OH">Ohio</option>
+                            <option value="OK">Oklahoma</option>
+                            <option value="OR">Oregon</option>
+                            <option value="PA">Pennsylvania</option>
+                            <option value="RI">Rhode Island</option>
+                            <option value="SC">South Carolina</option>
+                            <option value="SD">South Dakota</option>
+                            <option value="TN">Tennessee</option>
+                            <option value="TX">Texas</option>
+                            <option value="UT">Utah</option>
+                            <option value="VT">Vermont</option>
+                            <option value="VA">Virginia</option>
+                            <option value="WA">Washington</option>
+                            <option value="WV">West Virginia</option>
+                            <option value="WI">Wisconsin</option>
+                            <option value="WY">Wyoming</option>
 
-                            </select>
-                        </div>
+                        </select>
+                    </div>
 
-                        <!-- used chatgpt to obtain this script as a shortcut to inputting city/state -->
-                        <!-- I can omit this script and remove disabled from the city/state fields and they work -->
-                        <script>
-                            document.getElementById('zip').addEventListener('blur', function () {
-                              const zip = this.value;
-                              if (zip.length === 5 && /^[0-9]+$/.test(zip)) {
-                                fetch(`https://api.zippopotam.us/us/${zip}`)
-                                  .then(response => {
-                                    if (!response.ok) throw new Error("ZIP not found");
-                                    return response.json();
-                                  })
-                                  .then(data => {
-                                    const place = data.places[0];
-                                    document.getElementById('city').value = place['place name'];
-                                    document.getElementById('state').value = place['state abbreviation'];
-                                  })
-                                  .catch(error => {
-                                    console.error(error);
-                                    document.getElementById('city').value = '';
-                                    document.getElementById('state').value = '';
-                                    alert("Invalid ZIP code or data not found.");
-                                  });
-                              }
-                            });
-                          </script>
 
-<!--
-                        <div class="zip">
-                            <label for="zip">Zip Code</label>
-                            <input type="number" id="zip">
-                        </div>
--->
-                    </fieldset>
+                    <div class="zip">
+                        <label for="zip">Zip Code</label>
+                        <input type="text" id="zip" maxlength="5" name="user_state" alt="Type in your 5-digit zip code and hit enter"/>
+                    </div>
+                <!-- used chatgpt to obtain this script as a shortcut to inputting city/state 
+                            I can omit this script and remove disabled from the city/state fields and they work
+                    <script>
+                        document.getElementById('zip').addEventListener('blur', function () {
+                            const zip = this.value;
+                            if (zip.length === 5 && /^[0-9]+$/.test(zip)) {
+                            fetch(`https://api.zippopotam.us/us/${zip}`)
+                                .then(response => {
+                                if (!response.ok) throw new Error("ZIP not found");
+                                return response.json();
+                                })
+                                .then(data => {
+                                const place = data.places[0];
+                                document.getElementById('city').value = place['place name'];
+                                document.getElementById('state').value = place['state abbreviation'];
+                                })
+                                .catch(error => {
+                                console.error(error);
+                                document.getElementById('city').value = '';
+                                document.getElementById('state').value = '';
+                                alert("Invalid ZIP code or data not found.");
+                                });
+                            }
+                        });
+                        </script>
+
+                    <div class="zip">
+                        <label for="zip">Zip Code</label>
+                        <input type="number" id="zip">
+                    </div>
+                    -->
             </section>
-<!-- maybe form should end here, or hmmm.   instructions say use 1 form -->
+        </fieldset>
+    <!-- maybe form should end here, or hmmm.   instructions say use 1 form -->
 <!-- maybe use a 3rd section.  try that.  -->
 
             <hr>
@@ -184,52 +179,60 @@
 <!-- section 3: newsletter -->
 <!-- section 3: newsletter -->
 <!-- section 3: newsletter -->
-                    <section class="sec3">
-                        <h2>Newsletter</h2>
-                        <p>Select the newsletters you would like to receive</p>
+        <fieldset>
+                <section class="sec3">
+                    <legend>Newsletter</legend>
+                    <p>Select the newsletters you would like to receive</p>
 
-                        <div class="check">
-                            <input type="checkbox" name="html" value="checkbox">
-                            <label>HTML News</label>
-                        </div>
+                    <div class="check">
+                        <input type="checkbox" name="html" value="checkbox">
+                        <label>HTML News</label>
+                    </div>
 
-                        <div class="check">
-                            <input type="checkbox" name="css" value="checkbox">
-                            <label>CSS News</label>
-                        </div>
+                    <div class="check">
+                        <input type="checkbox" name="css" value="checkbox">
+                        <label>CSS News</label>
+                    </div>
 
-                        <div class="check">
-                            <input type="checkbox" name="js" value="checkbox">
-                            <label>Javascript News</label>
-                        </div>
+                    <div class="check">
+                        <input type="checkbox" name="js" value="checkbox">
+                        <label>Javascript News</label>
+                    </div>
 
 
-                        <p>Newsletter format</p>
+                    <p>Newsletter format</p>
 
-                        <div class="radio">
-                            <input type="radio" name="radio" value="htmlradio">
-                            <label>HTML</label>
-                        </div>
+                    <div class="radio">
+                        <input type="radio" name="radio" value="htmlradio">
+                        <label>HTML</label>
+                    </div>
 
-                        <div class="radio">
-                            <input type="radio" name="radio" value="radio">
-                            <label>Plain text</label>
-                        </div>
-                    </section>
+                    <div class="radio">
+                        <input type="radio" name="radio" value="radio">
+                        <label>Plain text</label>
+                    </div>
+                </section>
 
-                    <section class="sec4">
-                        <div class="textarea">
-                            <p>Other topics you'd like to hear about</p>
-                            <textarea name="textarea"></textarea>
-                        </div>
 
-                        <div class="button">
-                            <button type="submit">Sign Up</button>
-                        </div>
+<!-- textarea and submit -->
+<!-- textarea and submit -->
+<!-- textarea and submit -->
+<!-- textarea and submit -->
+<!-- textarea and submit -->
+                <section class="sec4">
+                    <div class="textarea">
+                        <label for="textarea">Other topics you'd like to hear about</label>
+                        <textarea type="text" name="user_textarea" id="textarea"></textarea>
+                    </div>
 
-                        <p class="copy">Copyright The Code Review</p>
-                    </section> <!-- end sec3 -->
-                </form>
+                    <div class="button">
+                        <button type="submit">Sign Up</button>
+                    </div>
+
+                    <p class="copy">Copyright The Code Review</p>
+                </section> <!-- end sec3 -->
+            </form>
+        </fieldset>
 <!-- end form-->
 
 <!-- JS script to lookup city/state using zip -->
