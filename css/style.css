@@ -61,21 +61,28 @@ h1 {
     font-weight: 100;
     padding-bottom: 15px;
 }
+legend {
+    font-size: 24px;
+    padding-top: 30px;
+}
 .container {
     padding: 5%;
 }
 hr {
     border-bottom: 2px solid black;
-    margin-top: 30px;
 }
 .sec1 {
     text-align: center;
     border-bottom: 4px solid black;
     margin-bottom: 4px;
 }
+/*
 .sec2 {
+    text-align: center;
     border-top: 2px solid black;
+    width: 100%;
 }
+*/
 .sec2 label {
     display: block;
     margin-bottom: 3px;
@@ -118,6 +125,7 @@ input::placeholder {
 }
 .zip {
     width: 50%;
+    margin-bottom: 40px;
 }
 /*
 input[placeholder="Required"] {
