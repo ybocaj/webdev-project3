@@ -1,0 +1,180 @@
+/* FONTS */
+@font-face {
+    font-family: "Dancing Script";
+    src: url("/fonts/DancingScript-VariableFont_wght.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Jersey";
+    src: url("/fonts/Jersey15-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Lora";
+    src: url("/fonts/Lora-VariableFont_wght.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Merriweather";
+    src: url("/fonts/Merriweather-VariableFont_opsz,wdth,wght.ttf")
+        format("truetype");
+}
+@font-face {
+    font-family: "Open Sans";
+    src: url("/fonts/OpenSans-VariableFont_wdth,wght.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Playwrite";
+    src: url("/fonts/PlaywriteESDecoGuides-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "PT Serif";
+    src: url("/fonts/PTSerif-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Roboto";
+    src: url("/fonts/Roboto-VariableFont_wdth,wght.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Roboto Serif";
+    src: url("/fonts/RobotoSerif-VariableFont_GRAD,opsz,wdth,wght.ttf")
+        format("truetype");
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: "Merriweather";
+}
+header {
+    background-color: #36454f;
+    padding: 10px;
+    text-align: center;
+    font-family: "PT Serif", Times, serif;
+}
+header,
+h1 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 20px;
+}
+.lite {
+    font-family: "Roboto Serif";
+    font-size: 12px;
+    font-weight: 100;
+    padding-bottom: 15px;
+}
+.container {
+    padding: 5%;
+}
+hr {
+    border-bottom: 2px solid black;
+    margin-top: 30px;
+}
+.sec1 {
+    text-align: center;
+    border-bottom: 4px solid black;
+    margin-bottom: 4px;
+}
+.sec2 {
+    border-top: 2px solid black;
+}
+.sec2 label {
+    display: block;
+    margin-bottom: 3px;
+    margin-top: 7px;
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 3px;
+}
+.sec2 input {
+    font-size: 18px;
+    padding: 15px 0 15px 10px;
+}
+.sec2 input,
+select {
+    font-family: "Roboto Serif";
+    width: 90%;
+    border: 0px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+}
+#state {
+    padding: 15px 0 15px 10px;
+}
+.sec2 input[placeholder="Required"] {
+    text-align: right;
+    font-style: italic;
+    font-weight: 100;
+    font-size: 12px;
+    margin-right: 15px;
+    padding: 15px 12px;
+}
+.zip {
+    width: 50%;
+}
+/*
+input[placeholder="Required"] {
+    margin-right: 15px;
+}
+*/
+.sec2 input:focus {
+    border: 2px solid #36454f;
+    text-align: left;
+}
+.newsletter input {
+    padding-right: 5px;
+}
+.sec3 {
+    display: flex;
+    flex-direction: column;
+}
+.sec3 input {
+    padding: 40px;
+}
+.check,
+.radio {
+    padding-bottom: 15px;
+}
+.sec3 label {
+    margin-left: 10px;
+}
+.copy {
+    font-family: "Roboto Serif";
+    font-style: italic;
+    font-weight: 100;
+    font-size: 14px;
+    text-align: center;
+}
+textarea {
+    width: 100%;
+    border: 0;
+    background-color: #f8f8f8;
+    padding: 40px 10px;
+}
+fieldset {
+    border: 0;
+    padding-top: 0;
+}
+button {
+    background-color: #57b9b0;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    padding: 25px 0;
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+}
+.button {
+    display: block;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+.sec4 {
+    width: 90%;
+}
+@media screen and (min-width: 1024px) {
+    .button {
+        margin: 0 auto;
+    }
+}
