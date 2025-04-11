@@ -63,25 +63,28 @@
 
                         <div class="tel">
                             <label for="phone">Phone Number</label>
-                            <input type="tel" id="Phone">
+                            <input type="tel" id="phone">
                         </div>
-                    </fieldset>
 
-                    <fieldset>
                         <div class="address">
                             <label for="address">Street Address</label>
                             <input type="text" id="address">
                         </div>
 
+                        <div>
+                            <label for="zip">ZIP Code Lookup:</label>
+                            <input type="text" id="zip" maxlength="5" alt="Type in your 5-digit zip code and hit enter"/>
+                        </div>
+
                         <div class="city">
                             <label for="city">City</label>
-                            <input type="text" id="city">
+                            <input type="text" id="city" disabled>
                         </div>
 
 <!-- pasted states from https://v1.designsystem.digital.gov/components/form-templates/ -->
                         <div class="states">
                             <label for="state">State</label>
-                            <select id="state" name="state">
+                            <select id="state" name="state" disabled>
                                 <option value>Choose State</option>
                                 <option value="AL">Alabama</option>
                                 <option value="AK">Alaska</option>
@@ -138,10 +141,38 @@
                             </select>
                         </div>
 
+                        <!-- used chatgpt to obtain this script as a shortcut to inputting city/state -->
+                        <!-- I can omit this script and remove disabled from the city/state fields and they work -->
+                        <script>
+                            document.getElementById('zip').addEventListener('blur', function () {
+                              const zip = this.value;
+                              if (zip.length === 5 && /^[0-9]+$/.test(zip)) {
+                                fetch(`https://api.zippopotam.us/us/${zip}`)
+                                  .then(response => {
+                                    if (!response.ok) throw new Error("ZIP not found");
+                                    return response.json();
+                                  })
+                                  .then(data => {
+                                    const place = data.places[0];
+                                    document.getElementById('city').value = place['place name'];
+                                    document.getElementById('state').value = place['state abbreviation'];
+                                  })
+                                  .catch(error => {
+                                    console.error(error);
+                                    document.getElementById('city').value = '';
+                                    document.getElementById('state').value = '';
+                                    alert("Invalid ZIP code or data not found.");
+                                  });
+                              }
+                            });
+                          </script>
+
+<!--
                         <div class="zip">
                             <label for="zip">Zip Code</label>
                             <input type="number" id="zip">
                         </div>
+-->
                     </fieldset>
             </section>
 <!-- maybe form should end here, or hmmm.   instructions say use 1 form -->
@@ -176,21 +207,23 @@
                         <p>Newsletter format</p>
 
                         <div class="radio">
-                            <input type="radio" name="htmlradio" value="radio">
+                            <input type="radio" name="radio" value="htmlradio">
                             <label>HTML</label>
                         </div>
 
                         <div class="radio">
-                            <input type="radio" name="textradio" value="radio">
+                            <input type="radio" name="radio" value="radio">
                             <label>Plain text</label>
                         </div>
+                    </section>
 
-                        <div>
+                    <section class="sec4">
+                        <div class="textarea">
                             <p>Other topics you'd like to hear about</p>
                             <textarea name="textarea"></textarea>
                         </div>
 
-                        <div>
+                        <div class="button">
                             <button type="submit">Sign Up</button>
                         </div>
 
@@ -198,6 +231,8 @@
                     </section> <!-- end sec3 -->
                 </form>
 <!-- end form-->
+
+<!-- JS script to lookup city/state using zip -->
 
         </div> <!-- end of container -->
     </body>
