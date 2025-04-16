@@ -1,36 +1,12 @@
 /* FONTS */
 @font-face {
-    font-family: "Dancing Script";
-    src: url("/fonts/DancingScript-VariableFont_wght.ttf") format("truetype");
-}
-@font-face {
-    font-family: "Jersey";
-    src: url("/fonts/Jersey15-Regular.ttf") format("truetype");
-}
-@font-face {
-    font-family: "Lora";
-    src: url("/fonts/Lora-VariableFont_wght.ttf") format("truetype");
-}
-@font-face {
     font-family: "Merriweather";
     src: url("/fonts/Merriweather-VariableFont_opsz,wdth,wght.ttf")
         format("truetype");
 }
 @font-face {
-    font-family: "Open Sans";
-    src: url("/fonts/OpenSans-VariableFont_wdth,wght.ttf") format("truetype");
-}
-@font-face {
-    font-family: "Playwrite";
-    src: url("/fonts/PlaywriteESDecoGuides-Regular.ttf") format("truetype");
-}
-@font-face {
     font-family: "PT Serif";
     src: url("/fonts/PTSerif-Regular.ttf") format("truetype");
-}
-@font-face {
-    font-family: "Roboto";
-    src: url("/fonts/Roboto-VariableFont_wdth,wght.ttf") format("truetype");
 }
 @font-face {
     font-family: "Roboto Serif";
