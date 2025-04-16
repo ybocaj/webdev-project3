@@ -63,7 +63,11 @@ h1 {
 }
 legend {
     font-size: 24px;
+    font-weight: 600;
     padding-top: 30px;
+}
+.contact {
+    padding-bottom: 20px;
 }
 .container {
     padding: 5%;
@@ -132,14 +136,28 @@ input[placeholder="Required"] {
     margin-right: 15px;
 }
 */
-.sec2 input:focus {
-    border: 2px solid #36454f;
-    text-align: left;
+select:focus, input:focus[type=text], input:focus[type=name], input:focus[type=email], input:focus[type=tel], input:focus[type=zip] {
+    border: 5px dashed pink;
+}
+textarea:focus {
+    border: 5px dashed pink;
+}
+textarea:focus:hover, select:focus:hover, input:focus:hover {
+  background-color: #ffcccc;
+  /* width: 200px;
+  height: 200px; */
+  rotate: 180deg;
+  border: 2px solid #00F;
+  transition-duration: 5s;
+}
+input, textarea, select {
+    outline: none;
 }
 .newsletter input {
     padding-right: 5px;
 }
 .sec3 {
+    background-color: #faf0f7;
     display: flex;
     flex-direction: column;
 }
@@ -165,6 +183,7 @@ textarea {
     border: 0;
     background-color: #f8f8f8;
     padding: 40px 10px;
+    font-size: 15px;
 }
 fieldset {
     border: 0;
@@ -189,8 +208,92 @@ button {
 .sec4 {
     width: 90%;
 }
+/* label[for="textarea"] {
+    font-size: 32px;
+    margin-bottom: 30px;
+} */
+label[class="textpad"] {
+    padding-top: 10px;
+}
+[class=textpad] {
+    display: block;
+    font-size: 16px;
+    padding-bottom: 10px;
+}
 @media screen and (min-width: 768px) {
     .button {
         margin: 0 auto;
+    }
+    .flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    /* label, input {
+        flex-basis: 1000px;
+    }  */
+    label[for=name] {
+        flex-grow: 1;
+    }
+    #name, #mail, #phone, #address, #city, #state {
+        flex-basis: 500px;
+        margin-top: 15px;
+    }
+    label[for=zip] {
+        flex-basis: 315px;
+    }
+    .zip {
+        width: 50%;
+        margin-top: 15px;
+    }
+/*  
+    #name, #mail, #phone, #address, #city, #state {
+        width: 40%;
+        padding-left: 10px;
+    } 
+*/
+}
+@media screen and (min-width: 992px) {
+    /* .button {
+        margin: 0 auto;
+    } */
+    .flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #name, #mail, #phone, #address, #city, #state {
+        flex-basis: 750px;
+        margin-top: 15px;
+    }
+    label[for=zip] {
+        flex-basis: 170px;
+    }
+    .zip {
+        width: 40%;
+        margin-top: 15px;
+    }
+    /* [class=textpad] {
+        display: block;
+        font-size: 18px;
+    } */
+}
+@media screen and (min-width: 1200px) {
+    .flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #name, #mail, #phone, #address, #city, #state {
+        flex-basis: 850px;
+        margin-top: 15px;
+    }
+    label[for=zip] {
+        flex-basis: 360px;
+    }
+    .zip {
+        width: 40%;
+        margin-top: 15px;
     }
 }
