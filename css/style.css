@@ -1,4 +1,13 @@
-/* FONTS */
+/* FONTS 
+
+    Was told by Travis that this is okay - since verbiage isn't clear - but 
+    I guess most people put their fonts in the HTML.  
+
+    I think it's easier to have my own font library and reference the family, 
+    which is what I've done with the fonts I downloaded (from Google).
+*/
+
+
 @font-face {
     font-family: "Merriweather";
     src: url("/fonts/Merriweather-VariableFont_opsz,wdth,wght.ttf")
@@ -188,7 +197,7 @@ button {
     padding-bottom: 20px;
 }
 .sec4 {
-    width: 90%;
+    width: 100%;
 }
 /* label[for="textarea"] {
     font-size: 32px;
