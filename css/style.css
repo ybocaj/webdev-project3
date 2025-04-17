@@ -211,6 +211,47 @@ label[class="textpad"] {
     font-size: 16px;
     padding-bottom: 10px;
 }
+
+
+@media screen and (min-width: 768px) {
+    .button {
+        margin: 0 auto;
+    }
+
+    .flex {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .sec2 input,
+    .sec2 select {
+        flex-basis: 70%;
+        margin-top: 15px;
+        flex-grow: 1;
+    }
+
+    .sec2 label {
+        display: block;
+        flex-basis: 25%;
+    }
+
+    .zip {
+        width: 100%;
+    }
+
+    #zip {
+        max-width: 25%;
+    }
+
+    /* optional */
+    form {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+}
+
+/*
 @media screen and (min-width: 768px) {
     .button {
         margin: 0 auto;
@@ -222,9 +263,7 @@ label[class="textpad"] {
         align-items: center;
     }
     
-    /* label, input {
-        flex-basis: 1000px;
-    }  */
+  // label, input { flex-basis: 1000px; 
     label[for=name] {
         flex-grow: 1;
     }
@@ -239,17 +278,11 @@ label[class="textpad"] {
         width: 50%;
         margin-top: 15px;
     }
-/*  
-    #name, #mail, #phone, #address, #city, #state {
-        width: 40%;
-        padding-left: 10px;
-    } 
-*/
+//  #name, #mail, #phone, #address, #city, #state { width: 40%; padding-left: 10px;  } 
+
 }
 @media screen and (min-width: 992px) {
-    /* .button {
-        margin: 0 auto;
-    } */
+// .button {     margin: 0 auto;  } 
     .flex {
         display: flex;
         flex-direction: row;
@@ -266,10 +299,7 @@ label[class="textpad"] {
         width: 40%;
         margin-top: 15px;
     }
-    /* [class=textpad] {
-        display: block;
-        font-size: 18px;
-    } */
+// [class=textpad] {      display: block;      font-size: 18px;   } 
 }
 @media screen and (min-width: 1200px) {
     .flex {
@@ -289,3 +319,4 @@ label[class="textpad"] {
         margin-top: 15px;
     }
 }
+*/
